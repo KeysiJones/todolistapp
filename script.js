@@ -64,10 +64,15 @@ let adicionarTarefa = function () {
 let removerTarefa = function(){
 	//REMOVE O ELEMENTO PAI E CONSEQUENTEMENTE SE REMOVE
 		this.parentElement.remove();
+		//CRIO UM ELEMENTO <li>
 		let listaFeitos = document.createElement('li');
+		//CRIO O TEXTO QUE CONTÉM O VALOR DO ELEMENTO PAI(LI NA POSIÇÃO 0 OU SEJA,ELEMENTO <a>)
 		let tarefaFeita = document.createTextNode(this.parentElement.children[0].innerText);
+		//COLOCO O MEU TEXTO DENTRO DO MEU <li>
 		listaFeitos.appendChild(tarefaFeita);
+		//ADICIONO O MEU LI AO UL DE TAREFAS FEITAS
 		feitos.appendChild(listaFeitos);
+		//ADICIONO O ATRIBUTO TEXTO RISCADO AOS ELEMENTOS <li> QUE CRIEI
 		listaFeitos.setAttribute('style','text-decoration:line-through');
 
 
