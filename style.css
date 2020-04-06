@@ -1,0 +1,45 @@
+li {
+	font-size: 1.2rem;
+	display: block;
+	color: #03729c
+}
+
+ul {
+	font-size: 2rem;
+	margin: 0 40px
+}
+
+ul #feitos li{
+	text-decoration: line-through;
+}
+
+input {
+	width: 20rem;
+	height: 2rem;
+	font-size: 1.2rem;
+}
+
+button {
+	border-radius: 5px;
+	background-color: #f1394d
+}
+
+#btn {
+	height: 2.5rem;
+}
+
+div {
+	display: flex;
+}
+
+#divPrincipal {
+	margin-top: 3.5rem;
+}
+
+#addTarefa {
+	justify-content: center;
+}
+
+hr{
+	margin-left: 10rem;
+}
